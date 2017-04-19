@@ -1,4 +1,4 @@
-my_name = 'jaime flores'
+my_name = 'Zed Shaw'
 my_age = 31
 my_height = 70 # inches
 my_weight = 180 # lbs

@@ -1,0 +1,984 @@
+# We are assigning variables!
+# Each one of these values is assigned a number. This is stored in memory as
+# the program runs.
+
+cars = 100
+space_in_a_car = 4.0
+drivers = 30
+passengers = 90
+
+# You can do math on its own or you can do math on the variables. Python will
+# interpret the variables as you use them so there's no need to recall a value
+# if you've already set it previously. I don't have to do the math for
+# carpool_capacity each time if it's already done once as a variable.
+
+cars_not_driven = cars - drivers
+cars_driven = drivers
+carpool_capacity = cars_driven * space_in_a_car
+average_passengers_per_car = passengers / cars_driven
+
+# Now we're pritning stuff left and right here. Pow pow pow pow. Each one of
+# them is taking the math I've already done and displaying it.
+
+print "There are", cars, "cars available"
+print "There are only", drivers, "drivers available"
+print "There will be", cars_not_driven, "empty cars today"
+print "We can transport", carpool_capacity, "people today"
+print "We have", passengers, "to carpool today."
+print "We need to put about", average_passengers_per_car, "in each car"
+my_name = 'Zed Shaw'
+my_age = 31
+my_height = 70 # inches
+my_weight = 180 # lbs
+my_eyes = 'Brown'
+my_teeth = 'White'
+my_hair = 'Brown'
+
+print "Let's talk about %s." % my_name
+print "He's %d years old" % my_age
+print "He's %d inches tall." % my_height
+print "He's %d pounds heavy." % my_weight
+print "Actually that's not too heavy."
+print "he's got %s eyes and %s hair." % (my_eyes, my_hair)
+print "His teeth are usually %s depending on the coffee." % my_teeth
+
+#This line is tricky, try to get it exactly right
+print "If I had %d, %d, and %d, I get %d." % (my_age, my_height, my_weight,
+    my_age + my_height + my_weight)
+
+
+print "Hello World!"
+print "Hello Again!"
+print "I like typing this"
+print "This is fun!"
+print 'Yay! Printing'
+print "I'd much rather you 'not'."
+print 'I "said" do not touch this.'
+print "this is another line"
+print "Hello World!"
+print "Hello Again!"
+print "I like typing this"
+print "This is fun!"
+print 'Yay! Printing'
+print "I'd much rather you 'not'."
+print 'I "said" do not touch this.'
+# A comment, this is so you can read your program later.
+# Anything after the # is ignored by python
+
+print "I could have code like this." #and the rest is ignored
+
+#You can also use a comment to "disable" or comment out a piece of code:
+# print "this won't run"
+
+print "this will run"
+# print the line
+print "Mary had a little lamb."
+
+# print the line and replace %s with snow
+print "Its fleece was white as %s." % 'snow'
+print "And everywhere that Mary went."
+
+# print 10 dots. 
+print "." * 10 # what'd that do???
+
+#Then we assign 10 variables. 
+end1 = "C"
+end2 = "h"
+end3 = "e"
+end4 = "e"
+end5 = "s"
+end6 = "e"
+end7 = "B"
+end8 = "u"
+end9 = "r"
+end10 = "g"
+end11 = "e"
+end12 = "r"
+
+# print out each one of our variables we assigned sequentially.
+
+print end1 + end2 + end3 + end4 + end5 + end6,
+print end7 + end8 + end9 + end10 + end11 + end12
+
+# Now without the comma
+print end1 + end2 + end3 + end4 + end5 + end6
+print end7 + end8 + end9 + end10 + end11 + end12
+
+
+formatter = "%r %r %r %r"
+
+print formatter % (1, 2, 3, 4)
+print formatter % ("one", "two", "three", "four")
+print formatter % (True, False, False, True)
+print formatter % (formatter, formatter, formatter, formatter)
+print formatter % (
+        "I had htis thing.",
+        "That you could type up right.",
+        "But it didn't sing.",
+        "So I said goodnight."
+)
+tabby_cat = "\tI'm tabbed in"
+persian_cat = "I'm split\non a line."
+backslash_cat = "I'm \\ a \\ cat"
+
+fat_cat = """
+I'll do a list:
+\t* Cat Food
+\t* Fishies
+\t* Catnip\n\t* Grass
+"""
+
+print tabby_cat
+print persian_cat
+print backslash_cat
+print fat_cat
+#Strings and text
+
+# This prints the % string at the end. The next few lines assign some more
+# variables. 
+# the y variable pulls in other % values in itself. so that's nifty
+
+
+x = "There are %d types of people." % 10
+binary = "binary"
+do_not = "don't"
+y = "Those who know %s and those who %s." % (binary, do_not)
+
+# print out the values
+
+print x
+print y
+
+# r displays the raw data. That's why we end up with the ticks and quotes when
+# it reprints the value of the variable we assigned above.
+print "i said: %r." % x
+print "I also said: '%s'." % y
+
+# assign the false value here
+hilarious = False
+joke_evaluation = "Isn't that joke so funny?! %r"
+
+# This is the same thing as above, except we're printing the variable instead
+# of printing a string of text.
+print joke_evaluation % hilarious
+
+# And then you just stick these two things together. 
+w = "This is the left of..."
+e = "a string with a right side."
+
+print w + e
+# A comment, this is so you can read your program later.
+# Anything after the # is ignored by python
+
+print "I could have code like this." #and the rest is ignored
+
+#You can also use a comment to "disable" or comment out a piece of code:
+# print "this won't run"
+
+print "this will run"
+#I need to do some math
+
+print "I have 3 chickens"
+print "John gives me 4 chickens"
+
+print "How many chickens do I have?"
+print "Let's add 3 and 4"
+print "That equals", 3 + 4
+## I was right about comments...
+
+# A comment, this is so you can read your program later.
+# Anything after the # is ignored by python
+
+print "I could have code like this." #and the rest is ignored
+
+#You can also use a comment to "disable" or comment out a piece of code:
+# print "this won't run"
+
+print "this will run"
+# Here's some new strange stuff, remember to type it exactly.
+
+days = "Mon Tue Wed Thu Fri Sat Sun"
+months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+
+print "Here are the days: ", days
+print "Here are the months: ", months
+
+print """
+There is something going on here.
+With the three double-quotes
+We'll be able to type as much as we like.
+Even 4 lines if we want to, or 5, or 6.
+"""
+
+
+##I'm supposed to remove all instances of my_ here.
+## with vim, you can :%s/my_//g and bam, it does them all
+
+name = 'Zed Shaw'
+age = 31
+height = 70 # inches
+weight = 180 # lbs
+eyes = 'Brown'
+teeth = 'White'
+hair = 'Brown'
+
+print "Let's talk about %s." % name
+print "He's %d years old" % age
+print "He's %d inches tall." % height
+print "He's %d pounds heavy." % weight
+print "Actually that's not too heavy."
+print "he's got %s eyes and %s hair." % (eyes, hair)
+print "His teeth are usually %s depending on the coffee." % teeth
+
+#This line is tricky, try to get it exactly right
+print "If I had %d, %d, and %d, I get %d." % (age, height, weight,
+    age + height + weight)
+
+
+#print "Hello World!"
+#print "Hello Again!"
+#print "I like typing this"
+#print "This is fun!"
+#print 'Yay! Printing'
+#print "I'd much rather you 'not'."
+#print 'I "said" do not touch this.'
+print "I only wanna print one line"
+print "Mary had a little lamb."
+print "Its fleece was white as %s." % 'snow'
+print "And everywhere tha tMary went."
+print "." * 10 # what'd that do???
+
+end1 = "C"
+end2 = "h"
+end3 = "e"
+end4 = "e"
+end5 = "s"
+end6 = "e"
+end7 = "B"
+end8 = "u"
+end9 = "r"
+end10 = "g"
+end11 = "e"
+end12 = "r"
+
+# watch the comma at the end. try removing it and see what happens 
+print end1 + end2 + end3 + end4 + end5 + end6,
+print end7 + end8 + end9 + end10 + end11 + end12
+#Strings and text
+
+x = "There are %d types of people." % 10
+binary = "binary"
+do_not = "don't"
+y = "Those who know %s and those who %s." % (binary, do_not)
+
+print x
+print y
+
+print "i said: %r." % x
+print "I also said: '%s'." % y
+
+hilarious = False
+joke_evaluation = "Isn't that joke so funny?! %r"
+
+print joke_evaluation % hilarious
+
+w = "This is the left of..."
+e = "a string with a right side."
+
+print w + e
+while True:
+    for i in ["/","-","|","\\","| "]:
+        print "%s\r" % i,
+#just text
+print " I Will now count my chickens:"
+
+#This will do some math after printing text. Then it does some math
+#Note the order of operations - first the / and then +
+print "Hens", 25 + 30 / 6
+
+#Order of Operations again. the % = the remainder of the math it's doing/
+#So, in order, 3 divided by 4 = remainer 3 which is multiplied by 25 to equal
+#75 which is then subtracted from 100
+print "Roosters", 100 - 25 * 3 % 4
+
+#print print print
+print "Now I will count the eggs."
+
+# modulus (%) then divide (no decimal!) then add and subtract
+print 3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6
+
+#print print print
+print "Is it true that 3 + 2 < 5 - 7?"
+
+#test which is less than
+print 3 + 2 < 5 - 7
+
+# print then math then print
+print "What is 3 + 2?", 3 + 2
+print "What is 5 - 7?", 5 - 7
+
+print "Oh, that's why it's False."
+
+print "How about some more."
+
+#Greater GreaterEquals LessthanEquals
+print "Is it greater?", 5 > -2
+print "Is it greater or equal?", 5 >= -2
+print "Is it less or equal?", 5 <= -2
+print " I Will now count my chickens:"
+
+print "Hens", 25 + 30 / 6
+print "Roosters", 100 - 25 * 3 % 4
+
+print "Now I will count the eggs."
+
+print 3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6
+
+print "Is it true that 3 + 2 < 5 - 7?"
+
+print 3 + 2 < 5 - 7
+
+print "What is 3 + 2?", 3 + 2
+print "What is 5 - 7?", 5 - 7
+
+print "Oh, that's why it's False."
+
+print "How about some more."
+
+print "Is it greater?", 5 > -2
+print "Is it greater or equal?", 5 >= -2
+print "Is it less or equal?", 5 <= -2
+# Probably good to remember its doing two things, first opening the file and
+# keeping it in memory and the printing the file using read()
+# Import the module
+
+
+from sys import argv
+
+# Define the argv's. The first one is the script name, second is the filename
+# you pass the script when you run it.
+
+script, filename = argv
+
+# Now we open the filename that we passed above.
+
+txt = open(filename)
+
+# Prints the contents of the file.
+
+print "Here's your file %r:" % filename
+print txt.read()
+
+txt.close()
+
+# Prompts the user to enter the name of the file.
+
+print "Type the filename again:"
+file_again = raw_input("> ")
+
+# prints the submitted filename from the prompt.
+txt_again = open(file_again)
+
+print txt_again.read()
+txt_again.close()
+from sys import argv
+
+name = raw_input("What is your name? ")
+
+print "your name is", name
+
+script, action = argv
+
+print "well " + name + ",", action + "!"
+from sys import argv
+
+script, filename = argv
+
+print "We're goinmg to erase %r." % filename
+print " If you don't want that, hit CTRL + C."
+print "If you do want that, hit RETURN."
+
+raw_input("?")
+
+print "Opening the file..."
+target = open(filename, 'w')
+
+print "Truncating the file. Goodbye!"
+target.truncate()
+
+print "Now I'm going to ask you for three lines."
+
+line1 = raw_input("line 1: ")
+line2 = raw_input("line 2: ")
+line3 = raw_input("line 3: ")
+
+print "I'm going to write these to the file."
+
+target.write(line1)
+target.write("\n")
+target.write(line2)
+target.write("\n")
+target.write(line3)
+target.write("\n")
+
+print "And finally we close it."
+target.close()
+def cheese_and_crackers(cheese_count, boxes_of_crackers):
+    print "You have %d cheeses!" % cheese_count
+    print "You have %d boxes of crackers!" % boxes_of_crackers
+    print "Man that's enough for a party!"
+    print "Get a blanket.\n"
+
+print "We can just give the function numbers directly."
+cheese_and_crackers(20, 30)
+
+
+
+print "OR, we can use variables from our script:"
+amount_of_cheese = 10
+amount_of_crackers = 50
+
+cheese_and_crackers(amount_of_cheese, amount_of_crackers)
+
+print "We can even do math inside too!"
+cheese_and_crackers(10 + 20, 5 +6)
+print "And we can combine the two, variables and math:"
+cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
+
+
+# Probably good to remember its doing two things, first opening the file and
+# keeping it in memory and the printing the file using read()
+# Import the module
+
+
+from sys import argv
+
+# Define the argv's. The first one is the script name, second is the filename
+# you pass the script when you run it.
+
+script, filename = argv
+
+# Now we open the filename that we passed above.
+
+txt = open(filename)
+
+# Prints the contents of the file.
+
+print "Here's your file %r:" % filename
+print txt.read()
+
+# Prompts the user to enter the name of the file.
+
+print "Type the filename again:"
+file_again = raw_input("> ")
+
+# prints the submitted filename from the prompt.
+txt_again = open(file_again)
+
+print txt_again.read()
+# import the module
+from sys import argv
+
+# define your args, first one is the script name next one is the input file
+# Maybe I missed something but i didn't see anything teling me how to write the
+# input file. My file looked like this.
+
+## This is line 1
+## This is line 2
+## This is line 3
+
+# Back to work.
+script, input_file = argv
+
+# I didn't get this at first, this post cleared it up:
+# http://stackoverflow.com/questions/16637518/python-file-variable-what-is-it
+# Then you read it.
+def print_all(f):
+    print f.read()
+
+# We define the fucntion rewind with seek(0) to get to the beginning of the
+# file.
+def rewind(f):
+    f.seek(0)
+
+# two arguments, line_count and the file you're reading.
+def print_a_line(line_count, f):
+# print the ine_count and read that file line
+    print line_count, f.readline()
+
+# define current file as the results of the opened input file.
+current_file = open(input_file)
+
+# duh.
+print "First let's print the whole file:\n"
+
+# print all lines in the file. We defined that earlier to make this function
+# just read the file. 
+print_all(current_file)
+
+print "Now let's rewind, kind of like a tape."
+
+#go back to the first line
+rewind(current_file)
+
+
+print "Let's print three lines:"
+
+# Current line is the first one, print it and the file contents
+current_line = 1
+print_a_line(current_line, current_file)
+
+# Increment current line and print the next. 
+current_line = current_line + 1
+print_a_line(current_line, current_file)
+
+# Same thing again. By this one youre adding to the previous one, python
+# remembers you've already added to it.
+
+current_line = current_line + 1
+print_a_line(current_line, current_file)
+
+
+# first we create the function. We pass variables to the function as we go.
+def cheese_and_crackers(cheese_count, boxes_of_crackers):
+# we're assigning the digit with the %d (instead of string %s) to the variable.
+    print "You have %d cheeses!" % cheese_count
+    print "You have %d boxes of crackers!" % boxes_of_crackers
+    print "Man that's enough for a party!"
+# Gotta have a new line at the end so it doesn't look funny with your prompt.
+    print "Get a blanket.\n"
+
+# You can just read the next line. 20 = cheese_count and 30 = boxes_of_crackers
+# python will remember the positions of your stuff.
+print "We can just give the function numbers directly."
+cheese_and_crackers(20, 30)
+
+
+
+print "OR, we can use variables from our script:"
+# Assign variables in our script
+amount_of_cheese = 10
+amount_of_crackers = 50
+
+# And then immediately reuse them by retyping out the function.
+cheese_and_crackers(amount_of_cheese, amount_of_crackers)
+
+# Math!
+print "We can even do math inside too!"
+cheese_and_crackers(10 + 20, 5 +6)
+print "And we can combine the two, variables and math:"
+cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
+
+
+from sys import argv
+
+script, user_name = argv
+prompt = '> '
+
+print "Hi %s, I'm the %s script." % (user_name, script)
+print "I'd like to ask you a few questions."
+print "Do you like me %s?" %user_name
+likes = raw_input(prompt)
+
+print "Where do you  live %s?" %user_name
+lives = raw_input(prompt)
+
+print "What kind of computer do you have?"
+computer = raw_input(prompt)
+
+print """
+Alright so you said %r about liking me.
+You live in %r. Not sure where that is.
+And you have a %r computer. Nice.
+""" % (likes, lives, computer)
+
+
+from sys import argv
+import time
+
+print "Let's read that last file!"
+
+# sleep for 2 seconds
+
+time.sleep(2)
+
+print "..." 
+
+print "What was that file name again?"
+filename = raw_input("?") 
+
+print "Ah yes! Opening that now..."
+target = open(filename,'r')
+
+print "Here it is: "
+print target.read()
+
+target.close()
+from sys import argv
+from os.path import exists
+
+script, from_file, to_file = argv
+
+print "Copying from %s to %s" % (from_file, to_file)
+
+# We could do these two on one line, how?
+
+# in_file = open(from_file)
+# indata = in_file.read()
+
+# Like this! I made the mistake he expected at the end. 
+
+indata = open(from_file).read()
+
+print "The input file is %d bytes long" % len(indata)
+
+print "Does the output file exist? %r" %exists(to_file)
+print "Ready, hit RETURN to continue, CTRL-C to abort."
+raw_input()
+
+out_file = open(to_file, 'w')
+out_file.write(indata)
+
+print "Alright, all done."
+
+out_file.close()
+# Commenting this out, hes right about what I did.
+# in_file.close()
+
+# first you import the modules
+
+from sys import argv
+
+# define the args. First one is the script name, second one is your file name
+
+script, filename = argv
+
+# Now we print some text to let you know the file will be cleared.
+
+print "We're going to erase %r." % filename
+print " If you don't want that, hit CTRL + C."
+print "If you do want that, hit RETURN."
+
+
+# prompt the user for their OK
+
+raw_input("?")
+
+# get 'er done
+print "Opening the file..."
+
+# This opens the file to write, instead of read with r.
+target = open(filename, 'w')
+
+print "Truncating the file. Goodbye!"
+target.truncate()
+
+print "Now I'm going to ask you for three lines."
+
+# prompt the user with the line x: and then ask for their input.
+
+line1 = raw_input("line 1: ")
+line2 = raw_input("line 2: ")
+line3 = raw_input("line 3: ")
+
+# What we're here for...
+print "I'm going to write these to the file."
+
+# Write it to the file and insert a new line after each line.
+
+target.write(line1)
+target.write("\n")
+target.write(line2)
+target.write("\n")
+target.write(line3)
+target.write("\n")
+
+# Close the file cleanly.
+print "And finally we close it."
+target.close()
+print "How old are you?",
+age = raw_input()
+
+print "How tall are you?",
+height = raw_input()
+
+print "How much do you weigh?",
+weight = raw_input()
+
+print "So, you're %r old, %r tall and %r heavy." % (
+        age, height, weight)
+# So i thought I'd be cute and add things together, but it literally adds your
+# raw_input, just like i told it to. (how rude). Instead, you need to cast each
+# input value as a integer if you know it's going to be an integer and that
+# will let you add them up.
+
+
+print "How old are you?"
+
+age = int(raw_input())
+
+print "How many years would you like to look ahead?"
+
+years = int(raw_input())
+
+
+total = age + years
+
+print "In that many years, you will be %s years old" % total 
+from sys import argv
+
+script, input_file = argv
+
+def print_all(f):
+    print f.read()
+
+def rewind(f):
+    f.seek(0)
+
+def print_a_line(line_count, f):
+    print line_count, f.readline()
+
+current_file = open(input_file)
+
+print "First let's print hte whole file:\n"
+
+print_all(current_file)
+
+print "Now let's rewind, kind of like a tape."
+
+rewind(current_file)
+
+print "Let's print three lines:"
+
+current_line = 1
+print_a_line(current_line, current_file)
+
+current_line = current_line + 1
+print_a_line(current_line, current_file)
+
+current_line = current_line + 1
+print_a_line(current_line, current_file)
+
+
+# This one is like your scripts with argv.
+def print_two(*args):
+    arg1, arg2 = args
+    print "arg1: %r, arg2: %r" %(arg1, arg2)
+
+def print_two_again(arg1, arg2):
+    print "arg1: %r, arg2: %r" % (arg1, arg2)
+
+# This one just takes one argument
+def print_one(arg1):
+    print "arg1: %r" % arg1
+
+# Thsi one takes no arguments
+def print_none():
+    print "I got nothin'."
+
+
+print_two("Zed","Shaw")
+print_two_again("Zed", "Shaw")
+print_one("First!")
+print_none()
+from sys import argv
+
+script, first, second, third = argv
+
+print "The script is called:", script
+print "Your first variable is:", first
+print "Your second variable is:", second
+print "Your third variable is:", third
+from sys import argv
+
+script, filename = argv
+
+print "We're goinmg to erase %r." % filename
+print " If you don't want that, hit CTRL + C."
+print "If you do want that, hit RETURN."
+
+raw_input("?")
+
+print "Opening the file..."
+target = open(filename, 'w')
+
+print "Truncating the file. Goodbye!"
+target.truncate()
+
+print "Now I'm going to ask you for three lines."
+
+line1 = raw_input("line 1: ")
+line2 = raw_input("line 2: ")
+line3 = raw_input("line 3: ")
+
+print "I'm going to write these to the file."
+
+target.write("%s\n%s\n%s\n" % (line1,line2,line3))
+
+target.write(line1)
+target.write("\n")
+target.write(line2)
+target.write("\n")
+target.write(line3)
+target.write("\n")
+
+print "And finally we close it."
+target.close()
+from sys import argv
+
+script, user_name = argv
+prompt = 'Say waaaat? -  '
+
+print "Hi %s, I'm the %s script." % (user_name, script)
+print "I'd like to ask you a few questions."
+print "Do you like me %s?" %user_name
+likes = raw_input(prompt)
+
+print "Where do you  live %s?" %user_name
+lives = raw_input(prompt)
+
+print "What kind of computer do you have?"
+computer = raw_input(prompt)
+
+print """
+Alright so you said %r about liking me.
+You live in %r. Not sure where that is.
+And you have a %r computer. Nice.
+""" % (likes, lives, computer)
+
+
+age = raw_input("How old are you? ")
+height = raw_input("How tall are you? ")
+weight = raw_input("How much do you weigh? ")
+
+print "So, you're %r old, %r tall and %r heavy." %(
+        age, height, weight)
+# first argument is the name of the person running the script
+# second arg is the weather - sunny, rainy, etc
+
+from sys import argv
+
+script, user_name, weather = argv
+prompt = '> '
+
+print "Hi %s, I'm the %s script." % (user_name, script)
+print "I'd like to ask you a few questions."
+print "Do you like me %s?" %user_name
+likes = raw_input(prompt)
+
+print "Where do you  live %s?" %user_name
+lives = raw_input(prompt)
+
+print "What kind of computer do you have?"
+computer = raw_input(prompt)
+
+print """
+Alright so you said %r about liking me.
+You live in %r. Not sure where that is.
+And you have a %r computer. Nice.
+Did you know the weather is %r today?
+""" % (likes, lives, computer, weather)
+
+
+from sys import argv
+
+
+script, filename = argv
+
+print "Let's read that last file!"
+
+print "It's name was %r." % filename
+target = open(filename,'r')
+
+print "Here it is: "
+print target.read()
+
+target.close()
+from sys import argv
+
+raw
+# Define a function where a and b are added and you return the answer.
+def add(a, b):
+    print "ADDING %d + %d" % (a, b)
+    return a + b
+
+# Define a function where b is subtracted from a and you return the answer.
+def subtract(a, b):
+    print "SUBTRACTING %d - %d" % (a, b)
+    return a - b
+
+# multiply a and b to return the answer. 
+def multiply(a, b):
+    print "MULTIPLYING %d * %d" % (a, b)
+    return a* b
+
+# Divide A by B and return the answer.
+def divide(a, b):
+    print "DIVIDING %d / %d" % (a, b)
+    return a / b
+
+print "Let's do some math with just functions!"
+
+# When the first value is A and the second value is B, do this.
+age = add(30, 5)
+height = subtract(78, 4)
+weight = multiply(90, 2)
+iq = divide(100, 2)
+
+# do the math and print the values in the string.
+# %d is like %s, except for digits or numbers.
+print "Age: %d, Height: %d, Weight: %d IQ: %d" % (age, height, weight, iq)
+
+# A puzzle for extra credit, type it in anyway.
+
+print "Here is a puzzle."
+
+# Take IQ and divide by two. take that answer and multiply it by weight, take
+# height and subtract your answer from it and then add it to the value of age. 
+#  age + (height- ((iq/2) * weight))
+# I Think thats right...
+
+what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
+
+print "That becomes: ", what, "Can you do it by hand?"
+def add(a, b):
+    print "ADDING %d + %d" % (a, b)
+    return a + b
+
+def subtract(a, b):
+    print "SUBTRACTING %d - %d" % (a, b)
+    return a - b
+
+def multiply(a, b):
+    print "MULTIPLYING %d * %d" % (a, b)
+    return a* b
+
+def divide(a, b):
+    print "DIVIDING %d / %d" % (a, b)
+    return a / b
+
+print "Let's do some math with just functions!"
+
+age = add(30, 5)
+height = subtract(78, 4)
+weight = multiply(90, 2)
+iq = divide(100, 2)
+
+print "Age: %d, Height: %d, Weight: %d IQ: %d" % (age, height, weight, iq)
+
+# A puzzle for extra credit, type it in anyway.
+
+print "Here is a puzzle."
+
+what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
+
+print "That becomes: ", what, "Can you do it by hand?"
+# 24 + 34 / 100 - 1023
+
+def allofit(a, b, c, d):
+    print "DOING MATH"
+    return a + b / c - d
+
+result = allofit(24, 34, 100, 1023)
+
+print result

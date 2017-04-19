@@ -1,7 +1,7 @@
 ##I'm supposed to remove all instances of my_ here.
 ## with vim, you can :%s/my_//g and bam, it does them all
 
-name = 'jaime flores'
+name = 'Zed Shaw'
 age = 31
 height = 70 # inches
 weight = 180 # lbs

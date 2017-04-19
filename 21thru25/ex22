@@ -1,0 +1,15 @@
+%r - represents a raw value - useful if you're putting in weird stuff
+%s - string, basically simple text
+%d - digits or numbers
+def - define a funtion to be used later
+argv - arguments in the script. import the module, use it
+seek - go to line in script. often used with seek(0) to go to beginning
+raw_input - prompt user for input and use it as part of the script
+int(raw_input()) - samesies, but number sonly
+print - print that text to console
+f - file - really just file. weird how that works, put f, python knows you mean the file 
+read - read content of file
+open - open a file for reading
+close - close file when done
+math - use basic math symbols to perform calculations.
+
