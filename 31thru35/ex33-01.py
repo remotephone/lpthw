@@ -12,4 +12,4 @@ while i < 6:
 print "The numbers: "
 
 for num in numbers:
-    print numY
+    print num
