@@ -19,6 +19,16 @@ class Crop:
         # each object to see ony its internal state. In order to make them
         # private you need to add an underscore before its name.
 
+# Self must be passed as a method to every parameter
+    def needs(self):
+        # return a dictionary containing light and water needs.
+        return {'light need':self._light_need,'water need':self._water_need}
+
+# Method to report the provided information
+    def report(self):
+        #return dicitonary containing type, status, growth, and days growing.
+        return {'type':self._type,'status':self._status,'growth':self._growth,'daysgrowing':self._days_growing}
+
 # When we want ot use a class we have to instantiate it.
 
 def main():
@@ -27,9 +37,9 @@ def main():
     # This is filling in the meaning of the vallies in the __init__ above!!!!
     # Crop class is called with growth_rate of 1, light_need of 4, and
     # water_need of 3.
-    print new_crop._status
-    print new_crop._light_need
-    print new_crop._water_need
+    print new_crop.needs()
+    print new_crop.needs()
+    print new_crop.needs()
     # WE can do this again and instantiate another crop!
     new_crop2 = Crop(2,3,4)
     print new_crop2._status
